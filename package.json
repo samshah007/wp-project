@@ -6,6 +6,13 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack-config.js --mode development"
   },
+  "babel": {
+    "presets": [
+      "env",
+      "stage-2",
+      "react"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samshah007/wp-project.git"
@@ -18,8 +25,20 @@
   },
   "homepage": "https://github.com/samshah007/wp-project#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^7.16.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-webpack-plugin": "^2.4.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.5.1"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
